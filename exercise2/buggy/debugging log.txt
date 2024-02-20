@@ -1,0 +1,24 @@
+Identified issues (found when running & playing around)
+1. Dice is thrown 5 times not 6.
+FIX: runner.py line 7, changed 5 to 6
+
+2. Says I'm wrong when I'm right and gives wrong answer (seemingly 5 everytime) - could be two different problems but they seem connected
+FIX: runner.py line 18, fixed "total"
+
+3. Error when I say I don't want to play again
+FIX: runner.py line 66, added break to else
+
+4. Error when inputting answer that is not integer when guessing
+FIX: runner.py lines 34-40, added message and an infinite loop that exits when input is integer
+
+5. round is an OG function in Python, not ideal to use as variable name
+FIX: runner.py multiple lines, changed round to rounds
+
+6. Doesn't count numbers of wins, loses and total round correctly.
+FIX: ??
+
+7. c-variable not being updated as it should
+FIX: ??
+
+8. Message when taking "too long" to get it right only triggers when c == 6
+FIX: c==6, changed to c>5 because it makes more sense than an exact number

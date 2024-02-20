@@ -1,0 +1,18 @@
+a. Investigate the performance of the matmult.py script
+
+In which line(s) of the script would you start optimizing for speed?
+
+9 & 14
+
+b. Investigate the performance of the euler72.py script
+
+In which line(s) of the script would you start optimizing for speed? (This is one problem from the euler project: https://projecteuler.net/problem=72)
+
+24, 3, 53
+
+
+c. Improve the performance of the matmult.py script
+
+What is the best performance that you achieved with N=250?
+
+How to improve?
