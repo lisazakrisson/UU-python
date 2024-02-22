@@ -5,20 +5,22 @@ FIX: runner.py line 7, changed 5 to 6
 2. Says I'm wrong when I'm right and gives wrong answer (seemingly 5 everytime) - could be two different problems but they seem connected
 FIX: runner.py line 18, fixed "total"
 
-3. Error when I say I don't want to play again
-FIX: runner.py line 66, added break to else
+3. Error when I say I don't want to play again, and exits if anything other than y or '' is input
+FIX: runner.py line 66-78, added while loop to allow multiple inputs 
 
 4. Error when inputting answer that is not integer when guessing
-FIX: runner.py lines 34-40, added message and an infinite loop that exits when input is integer
+FIX: runner.py lines 37-43, added message and an infinite loop that exits when input is integer
 
 5. round is an OG function in Python, not ideal to use as variable name
 FIX: runner.py multiple lines, changed round to rounds
 
 6. Doesn't count numbers of wins, loses and total round correctly.
-FIX: ??
+FIX: runner.py multiple lines, runner only initiated once and therefore reset once
 
 7. c-variable not being updated as it should
-FIX: ??
+FIX: runner.py lines 49 and 55, win resets c and lose c+=1
 
 8. Message when taking "too long" to get it right only triggers when c == 6
-FIX: c==6, changed to c>5 because it makes more sense than an exact number
+FIX: runner.py line 50, c==6, changed to c>5 because it makes more sense than an exact number
+
+I mean, it's not a good code and it still gives rude messages, but it works
